@@ -1,19 +1,21 @@
 import React from "react";
 import { Typography, Link } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { theme } from "../App"
 
 const useStyles = makeStyles({
   link: {
     textDecoration: "none",
-    color: theme.palette.gray.main,
+    color: "#bcbcbd",
     marginLeft: 8
   },
   wrapper: {
     display: 'flex',
     justifyContent: "space-between",
     padding: 20,
-    borderTop: `1px solid ${theme.palette.gray.main}`
+    borderTop: "1px solid #bcbcbd"
+  },
+  copyright: {
+    color: "#bcbcbd"
   }
 });
 
@@ -22,7 +24,7 @@ export default function Footer() {
   return (
     <div className={classes.wrapper}>
       <div>
-        <Typography variant="caption" style={{color: theme.palette.gray.main}}>2021 © Taserver Pharmacy. All Right Reserved.</Typography>
+        <Typography variant="caption" className={classes.copyright}>2021 © Taserver Pharmacy. All Right Reserved.</Typography>
       </div>
       <div>
         <Link href="#" className={classes.link} variant="caption">About</Link>

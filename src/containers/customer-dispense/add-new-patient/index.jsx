@@ -74,7 +74,7 @@ export default function AddNewPatient() {
 
       <Paper elevation={1}>
         <Box sx={{ width: "100%" }}>
-          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Box sx={{ borderBottom: 1, paddingTop: 3, marginLeft: 3, marginRight: 3, borderColor: "divider" }}>
             <Tabs
               value={value}
               onChange={handleChange}
@@ -137,6 +137,7 @@ export default function AddNewPatient() {
           </TabPanel>
         </Box>
       </Paper>
+      <div style={{paddingTop: value !== 0 ? 500 : 0}} />
     </div>
   );
 }
