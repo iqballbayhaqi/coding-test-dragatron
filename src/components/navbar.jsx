@@ -129,7 +129,7 @@ export default function Navbar({ drawerWidth }) {
               </Menu>
 
               <Avatar style={{ marginLeft: 15 }}>
-                <Badge color="primary" variant="dot">
+                <Badge color="error" variant="dot">
                   <NotificationsIcon />
                 </Badge>
               </Avatar>
